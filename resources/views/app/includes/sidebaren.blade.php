@@ -2,28 +2,28 @@
     <img src="/images/pismennyi.png" title="Written Translation Services" alt="Written Translation Services"><h4>Written Translation Services</h4>
 	 <ul class="list-unstyled">
         <li>
-		<a href="/en/urgtr.html">Urgent translation</a>
+		<a href="{{ url('/en/urgtr.html') }}">Urgent translation</a>
 		</li>   	  
 		<li>
-		<a href="/en/wrtransl.html">Written Translation</a>
+		<a href="{{ url('/en/wrtransl.html') }}">Written Translation</a>
 		</li> 
 		<li>
-		<a href="/en/techen.html">Technical translation</a>
+		<a href="{{ url('/en/techen.html') }}">Technical translation</a>
 		</li> 
 		<li>
-		<a href="/en/econen.html">Economic translation</a>
+		<a href="{{ url('/en/econen.html') }}">Economic translation</a>
 		</li> 
 		<li>
-		<a href="/en/finen.html">Financial translation</a>
+		<a href="{{ url('/en/finen.html') }}">Financial translation</a>
 		</li> 
 		<li>
-		<a href="/en/meden.html">Medical translation</a>
+		<a href="{{ url('/en/meden.html') }}">Medical translation</a>
 		</li> 
 		<li>
-		<a href="/en/legalen.html">Legal translation</a>
+		<a href="{{ url('/en/legalen.html') }}">Legal translation</a>
 		</li> 
 		<li>
-		<a href="/en/persen.html">Translation of personal documents</a>
+		<a href="{{ url('/en/persen.html') }}">Translation of personal documents</a>
 		</li> 
 
 	  </ul>
@@ -32,7 +32,7 @@
 	  <img src="/images/ustnyi.png" title="Urgent Translation Services" alt="Urgent Translation Services"><h4>Urgent Translation Services</h4>
 	  <ul class="list-unstyled">
         <li>
-		<a href="/en/oral.html">Oral translation</a>
+		<a href="{{ url('/en/oral.html') }}">Oral translation</a>
 		</li>
 		<li>
 		<a> Consecutive translation</a>
@@ -46,16 +46,16 @@
 	  <img src="/images/zaverenyi.png" title="Notarization of Translations Services" alt="Notarization of Translations Services"><h4>Notarization of Translations Services</h4>
 		<ul class="list-unstyled">	
         <li>
-		<a href="/en/notartransl.html">Notarial translation</a>
+		<a href="{{ url('/en/notartransl.html') }}">Notarial translation</a>
 		</li>
         <li>
-		<a href="/en/aplegal.html">Legalization and apostille</a>
+		<a href="{{ url('/en/aplegal.html') }}">Legalization and apostille</a>
 		</li>
         <li>
-		<a href="/en/certtr.html">Certification by the translation agency</a>
+		<a href="{{ url('/en/certtr.html') }}">Certification by the translation agency</a>
 		</li>
 		 <li>
-		<a href="/en/nostrific.html">Nostrification</a>
+		<a href="{{ url('/en/nostrific.html') }}">Nostrification</a>
 		</li>
       </ul>
          </div>
@@ -63,13 +63,13 @@
      <img src="/images/dopuslugi.png" title="Additional services" alt="Additional services"><h4>Additional services</h4>
       <ul class="list-unstyled">
         <li>
-		<a href="/en/courdel.html">Courier Delivery</a>
+		<a href="{{ url('/en/courdel.html') }}">Courier Delivery</a>
 		</li>
         <li>
-		<a href="/en/webloc.html">Website Translation and Localization</a>
+		<a href="{{ url('/en/webloc.html') }}">Website Translation and Localization</a>
 		</li>
         <li>
-		<a href="/en/traudiovideo.html">Translation from audio and video media</a>
+		<a href="{{ url('/en/traudiovideo.html') }}">Translation from audio and video media</a>
 		</li>
       </ul>
 	  
