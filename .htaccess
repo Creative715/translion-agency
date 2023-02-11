@@ -1,0 +1,25 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^public
+RewriteRule ^(.*)$ public/$1 [L]
+
+
+Redirect 301 /poslugi.html https://translion.net/ua/poslugi.html
+Redirect 301 /tsiny.html https://translion.net/ua/tsiny.html
+Redirect 301 kontakt.html https://translion.net/ua/kontakt.html
+Redirect 301 /termper.html https://translion.net/ua/termper.html
+Redirect 301 /pysmovyi.html https://translion.net/ua/pysmovyi.html
+Redirect 301 /tehnua.html https://translion.net/ua/tehnua.html
+Redirect 301 /ekonua.html https://translion.net/ua/ekonua.html
+Redirect 301 /finua.html https://translion.net/ua/finua.html
+Redirect 301 /medua.html https://translion.net/ua/medua.html
+Redirect 301 /yurua.html https://translion.net/ua/yurua.html
+Redirect 301 /lichua.html https://translion.net/ua/lichua.html
+Redirect 301 /usnyi.html https://translion.net/ua/usnyi.html
+Redirect 301 /notarialnyi.html https://translion.net/ua/notarialnyi.html
+Redirect 301 /aplehal.html https://translion.net/ua/aplehal.html
+Redirect 301 /zasvidch.html https://translion.net/ua/zasvidch.html
+Redirect 301 /nostrifua.html https://translion.net/ua/nostrifua.html
+Redirect 301 /kurierua.html https://translion.net/ua/kurierua.html
+Redirect 301 /persaytu.html https://translion.net/ua/persaytu.html
+Redirect 301 /peraudiovideo.html https://translion.net/ua/peraudiovideo.html
+Redirect 301 /perekladacham.html https://translion.net/ua/perekladacham.html

@@ -22,12 +22,7 @@ class MainController extends Controller
     public function de()
     {
         $mains = Main::all()->where('id', 3)->firstOrFail();
-        return view('app.pages.plmain', compact('mains'));
+        return view('app.pages.demain', compact('mains'));
     }
 
-    public function ro()
-    {
-        $mains = Main::all()->where('id', 4)->firstOrFail();
-        return view('app.pages.plmain', compact('mains'));
-    }
 }

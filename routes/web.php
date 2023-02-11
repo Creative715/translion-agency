@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\EnpageController;
+use App\Http\Controllers\DepageController;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\UapageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +17,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [MainController::class, 'index'])->name('main');
+Route::get('en', [MainController::class, 'en'])->name('en');
+Route::get('de', [MainController::class, 'de'])->name('de');
+Route::get('ua/{slug}.html', [UapageController::class, 'more'])->name('uapage');
+Route::get('en/{slug}.html', [EnpageController::class, 'more'])->name('enpage');
+Route::get('de/{slug}.html', [DepageController::class, 'more'])->name('depage');
 
 Auth::routes();
 

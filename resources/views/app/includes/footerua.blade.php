@@ -1,0 +1,1 @@
+<footer>&copy; <?= date('Y') ?> Бюро перекладів Translion. Київ</footer>
