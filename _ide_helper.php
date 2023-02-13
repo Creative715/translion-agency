@@ -15754,14 +15754,28 @@
      */ 
         class URL {
                     /**
+         * Format the given URL segments into a single URL.
+         *
+         * @param string $root
+         * @param string $path
+         * @param \Illuminate\Routing\Route|null $route
+         * @return string 
+         * @static 
+         */ 
+        public static function format($root, $path, $route = null)
+        {
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
+                        return $instance->format($root, $path, $route);
+        }
+                    /**
          * Get the full URL for the current request.
          *
          * @return string 
          * @static 
          */ 
         public static function full()
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->full();
         }
                     /**
@@ -15771,8 +15785,8 @@
          * @static 
          */ 
         public static function current()
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->current();
         }
                     /**
@@ -15783,8 +15797,8 @@
          * @static 
          */ 
         public static function previous($fallback = false)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->previous($fallback);
         }
                     /**
@@ -15795,8 +15809,8 @@
          * @static 
          */ 
         public static function previousPath($fallback = false)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->previousPath($fallback);
         }
                     /**
@@ -15809,8 +15823,8 @@
          * @static 
          */ 
         public static function to($path, $extra = [], $secure = null)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->to($path, $extra, $secure);
         }
                     /**
@@ -15822,8 +15836,8 @@
          * @static 
          */ 
         public static function secure($path, $parameters = [])
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->secure($path, $parameters);
         }
                     /**
@@ -15835,8 +15849,8 @@
          * @static 
          */ 
         public static function asset($path, $secure = null)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->asset($path, $secure);
         }
                     /**
@@ -15847,8 +15861,8 @@
          * @static 
          */ 
         public static function secureAsset($path)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->secureAsset($path);
         }
                     /**
@@ -15861,8 +15875,8 @@
          * @static 
          */ 
         public static function assetFrom($root, $path, $secure = null)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->assetFrom($root, $path, $secure);
         }
                     /**
@@ -15873,8 +15887,8 @@
          * @static 
          */ 
         public static function formatScheme($secure = null)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->formatScheme($secure);
         }
                     /**
@@ -15889,8 +15903,8 @@
          * @static 
          */ 
         public static function signedRoute($name, $parameters = [], $expiration = null, $absolute = true)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->signedRoute($name, $parameters, $expiration, $absolute);
         }
                     /**
@@ -15904,8 +15918,8 @@
          * @static 
          */ 
         public static function temporarySignedRoute($name, $expiration, $parameters = [], $absolute = true)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->temporarySignedRoute($name, $expiration, $parameters, $absolute);
         }
                     /**
@@ -15918,8 +15932,8 @@
          * @static 
          */ 
         public static function hasValidSignature($request, $absolute = true, $ignoreQuery = [])
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->hasValidSignature($request, $absolute, $ignoreQuery);
         }
                     /**
@@ -15931,8 +15945,8 @@
          * @static 
          */ 
         public static function hasValidRelativeSignature($request, $ignoreQuery = [])
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->hasValidRelativeSignature($request, $ignoreQuery);
         }
                     /**
@@ -15945,8 +15959,8 @@
          * @static 
          */ 
         public static function hasCorrectSignature($request, $absolute = true, $ignoreQuery = [])
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->hasCorrectSignature($request, $absolute, $ignoreQuery);
         }
                     /**
@@ -15957,8 +15971,8 @@
          * @static 
          */ 
         public static function signatureHasNotExpired($request)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->signatureHasNotExpired($request);
         }
                     /**
@@ -15972,8 +15986,8 @@
          * @static 
          */ 
         public static function route($name, $parameters = [], $absolute = true)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->route($name, $parameters, $absolute);
         }
                     /**
@@ -15987,8 +16001,8 @@
          * @static 
          */ 
         public static function toRoute($route, $parameters, $absolute)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->toRoute($route, $parameters, $absolute);
         }
                     /**
@@ -16002,8 +16016,8 @@
          * @static 
          */ 
         public static function action($action, $parameters = [], $absolute = true)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->action($action, $parameters, $absolute);
         }
                     /**
@@ -16014,8 +16028,8 @@
          * @static 
          */ 
         public static function formatParameters($parameters)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->formatParameters($parameters);
         }
                     /**
@@ -16027,23 +16041,9 @@
          * @static 
          */ 
         public static function formatRoot($scheme, $root = null)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->formatRoot($scheme, $root);
-        }
-                    /**
-         * Format the given URL segments into a single URL.
-         *
-         * @param string $root
-         * @param string $path
-         * @param \Illuminate\Routing\Route|null $route
-         * @return string 
-         * @static 
-         */ 
-        public static function format($root, $path, $route = null)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
-                        return $instance->format($root, $path, $route);
         }
                     /**
          * Determine if the given path is a valid URL.
@@ -16053,8 +16053,8 @@
          * @static 
          */ 
         public static function isValidUrl($path)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->isValidUrl($path);
         }
                     /**
@@ -16065,8 +16065,8 @@
          * @static 
          */ 
         public static function defaults($defaults)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         $instance->defaults($defaults);
         }
                     /**
@@ -16076,8 +16076,8 @@
          * @static 
          */ 
         public static function getDefaultParameters()
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->getDefaultParameters();
         }
                     /**
@@ -16088,8 +16088,8 @@
          * @static 
          */ 
         public static function forceScheme($scheme)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         $instance->forceScheme($scheme);
         }
                     /**
@@ -16100,32 +16100,32 @@
          * @static 
          */ 
         public static function forceRootUrl($root)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         $instance->forceRootUrl($root);
         }
                     /**
          * Set a callback to be used to format the host of generated URLs.
          *
          * @param \Closure $callback
-         * @return \Illuminate\Routing\UrlGenerator 
+         * @return \LaravelTrailingSlash\UrlGenerator 
          * @static 
          */ 
         public static function formatHostUsing($callback)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->formatHostUsing($callback);
         }
                     /**
          * Set a callback to be used to format the path of generated URLs.
          *
          * @param \Closure $callback
-         * @return \Illuminate\Routing\UrlGenerator 
+         * @return \LaravelTrailingSlash\UrlGenerator 
          * @static 
          */ 
         public static function formatPathUsing($callback)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->formatPathUsing($callback);
         }
                     /**
@@ -16135,8 +16135,8 @@
          * @static 
          */ 
         public static function pathFormatter()
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->pathFormatter();
         }
                     /**
@@ -16146,8 +16146,8 @@
          * @static 
          */ 
         public static function getRequest()
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->getRequest();
         }
                     /**
@@ -16158,44 +16158,44 @@
          * @static 
          */ 
         public static function setRequest($request)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         $instance->setRequest($request);
         }
                     /**
          * Set the route collection.
          *
          * @param \Illuminate\Routing\RouteCollectionInterface $routes
-         * @return \Illuminate\Routing\UrlGenerator 
+         * @return \LaravelTrailingSlash\UrlGenerator 
          * @static 
          */ 
         public static function setRoutes($routes)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->setRoutes($routes);
         }
                     /**
          * Set the session resolver for the generator.
          *
          * @param callable $sessionResolver
-         * @return \Illuminate\Routing\UrlGenerator 
+         * @return \LaravelTrailingSlash\UrlGenerator 
          * @static 
          */ 
         public static function setSessionResolver($sessionResolver)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->setSessionResolver($sessionResolver);
         }
                     /**
          * Set the encryption key resolver.
          *
          * @param callable $keyResolver
-         * @return \Illuminate\Routing\UrlGenerator 
+         * @return \LaravelTrailingSlash\UrlGenerator 
          * @static 
          */ 
         public static function setKeyResolver($keyResolver)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->setKeyResolver($keyResolver);
         }
                     /**
@@ -16206,8 +16206,8 @@
          * @static 
          */ 
         public static function withKeyResolver($keyResolver)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->withKeyResolver($keyResolver);
         }
                     /**
@@ -16217,20 +16217,20 @@
          * @static 
          */ 
         public static function getRootControllerNamespace()
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->getRootControllerNamespace();
         }
                     /**
          * Set the root controller namespace.
          *
          * @param string $rootNamespace
-         * @return \Illuminate\Routing\UrlGenerator 
+         * @return \LaravelTrailingSlash\UrlGenerator 
          * @static 
          */ 
         public static function setRootControllerNamespace($rootNamespace)
-        {
-                        /** @var \Illuminate\Routing\UrlGenerator $instance */
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        /** @var \LaravelTrailingSlash\UrlGenerator $instance */
                         return $instance->setRootControllerNamespace($rootNamespace);
         }
                     /**
@@ -16242,8 +16242,8 @@
          * @static 
          */ 
         public static function macro($name, $macro)
-        {
-                        \Illuminate\Routing\UrlGenerator::macro($name, $macro);
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        \LaravelTrailingSlash\UrlGenerator::macro($name, $macro);
         }
                     /**
          * Mix another object into the class.
@@ -16255,8 +16255,8 @@
          * @static 
          */ 
         public static function mixin($mixin, $replace = true)
-        {
-                        \Illuminate\Routing\UrlGenerator::mixin($mixin, $replace);
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        \LaravelTrailingSlash\UrlGenerator::mixin($mixin, $replace);
         }
                     /**
          * Checks if macro is registered.
@@ -16266,8 +16266,8 @@
          * @static 
          */ 
         public static function hasMacro($name)
-        {
-                        return \Illuminate\Routing\UrlGenerator::hasMacro($name);
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        return \LaravelTrailingSlash\UrlGenerator::hasMacro($name);
         }
                     /**
          * Flush the existing macros.
@@ -16276,8 +16276,8 @@
          * @static 
          */ 
         public static function flushMacros()
-        {
-                        \Illuminate\Routing\UrlGenerator::flushMacros();
+        {            //Method inherited from \Illuminate\Routing\UrlGenerator         
+                        \LaravelTrailingSlash\UrlGenerator::flushMacros();
         }
          
     }

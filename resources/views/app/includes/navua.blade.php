@@ -2,10 +2,10 @@
     style="background-color: rgba(53, 152, 219, .5);position: relative; z-index: 1; min-height: 80px; text-align: right;padding: 15px 55px;">
     <ul class="lang" style="position: absolute;right: 10px;">
         <li>
-            <a href="{{ url('en/') }}">EN</a>
+            <a href="{{ route('en') }}">EN</a>
         </li>
         <li>
-            <a href="{{ url('de/') }}">DE</a>
+            <a href="{{ route('de') }}">DE</a>
         </li>
     </ul>
 </nav>
