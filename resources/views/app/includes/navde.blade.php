@@ -13,9 +13,9 @@
     <div id="mySidebar" class="sidebar text-uppercase">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="{{ route('de') }}">Daheim</a>
-        @foreach ($depages as $depage)
-            <a href="{{ route('depage', $depage->slug) }}">{{ $depage->title }}</a>
-        @endforeach
+        <a href="/de/uebersetzung.html">nacherzählung gefallen</a>
+        <a href="/de/preise.html">preise</a>
+        <a href="/de/kontakte.html">kontakte</a>
     </div>
     <div id="main">
         <button class="openbtn" onclick="openNav()">☰</button>

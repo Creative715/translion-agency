@@ -2,10 +2,10 @@ RewriteEngine On
 RewriteCond %{REQUEST_URI} !^public
 RewriteRule ^(.*)$ public/$1 [L]
 
-
+Redirect 301 /vidperkl.html https://sample.translion.net/ua/vidperkl.html
+Redirect 301 /tsiny.html https://sample.translion.net/ua/tsiny.html
+Redirect 301 /kontakt.html https://sample.translion.net/ua/kontakt.html
 Redirect 301 /poslugi.html https://translion.net/ua/poslugi.html
-Redirect 301 /tsiny.html https://translion.net/ua/tsiny.html
-Redirect 301 kontakt.html https://translion.net/ua/kontakt.html
 Redirect 301 /termper.html https://translion.net/ua/termper.html
 Redirect 301 /pysmovyi.html https://translion.net/ua/pysmovyi.html
 Redirect 301 /tehnua.html https://translion.net/ua/tehnua.html

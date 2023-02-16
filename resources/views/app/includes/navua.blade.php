@@ -13,9 +13,11 @@
     <div id="mySidebar" class="sidebar text-uppercase">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="{{ route('main') }}">головна</a>
-        @foreach ($uapages as $uapage)
-            <a href="{{ route('uapage', $uapage->slug) }}">{{ $uapage->title }}</a>
-        @endforeach
+        <a href="/ua/vidperkl.html">послуги перекладу</a>
+        <a href="/ua/tsiny.html">ціни</a>
+        <a href="{{ route('articles') }}">статті</a>
+        <a href="/ua/perekladacham.html">перекладачам</a>
+        <a href="/ua/kontakt.html">контакти</a>
     </div>
     <div id="main">
         <button class="openbtn" onclick="openNav()">☰</button>

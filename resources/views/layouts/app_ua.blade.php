@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
-    <title>{{ $title ?? 'Creative STUDIO' }}</title>
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <title>{{ $title ?? 'Бюро пееркладів Translion' }}</title>
     <meta name="description" content="{{ $description }}">
     <!-- Stylesheets-->
     <link rel="stylesheet" href="{{ asset('font/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/template.css') }}">
 </head>
 
@@ -72,7 +73,6 @@
     </script>
     <div id="scroller"><i class="fa fa-arrow-circle-up fa-5x" style="color: #D96B5D" aria-hidden="true"></i></div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="https://translion.net/ua/share42/share42.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{{ asset('js/parallax.js') }}"></script>
 </body>

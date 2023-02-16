@@ -29,7 +29,7 @@
 	  </ul>
       </div>
      <div class="translations">
-	  <img src="/images/ustnyi.png" title="Urgent Translation Services" alt="Urgent Translation Services"><h4>Urgent Translation Services</h4>
+	  <img src="{{ asset('/images/ustnyi.png') }}" title="Urgent Translation Services" alt="Urgent Translation Services"><h4>Urgent Translation Services</h4>
 	  <ul class="list-unstyled">
         <li>
 		<a href="/en/oral.html">Oral translation</a>
@@ -43,7 +43,7 @@
       </ul>
          </div>
 	    <div class="translations">
-	  <img src="/images/zaverenyi.png" title="Notarization of Translations Services" alt="Notarization of Translations Services"><h4>Notarization of Translations Services</h4>
+	  <img src="{{ asset('/images/zaverenyi.png') }}" title="Notarization of Translations Services" alt="Notarization of Translations Services"><h4>Notarization of Translations Services</h4>
 		<ul class="list-unstyled">	
         <li>
 		<a href="/en/notartransl.html">Notarial translation</a>
@@ -60,7 +60,7 @@
       </ul>
          </div>
         <div class="translations">
-     <img src="/images/dopuslugi.png" title="Additional services" alt="Additional services"><h4>Additional services</h4>
+     <img src="{{ asset('/images/dopuslugi.png') }}" title="Additional services" alt="Additional services"><h4>Additional services</h4>
       <ul class="list-unstyled">
         <li>
 		<a href="/en/courdel.html">Courier Delivery</a>

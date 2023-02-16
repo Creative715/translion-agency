@@ -24,7 +24,7 @@
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12">
             <div id="alert-services" class="alert row">
-                <a href="/kontakt.html">
+                <a href="/ua/kontakt.html">
                     <div class="col-md-2 col-sm-2"><i class="fa fa-address-book fa-3x"></i></div>
                     <div class="col-md-9 col-sm-9">
                         <h3>Контакти </h3>

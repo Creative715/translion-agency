@@ -1,4 +1,4 @@
-@extends('layouts.app_ua', ['title' => $uapages->seo_title, 'description' => $uapages->description])
+@extends('layouts.app_ua', ['title' => $uapages->title, 'description' => $uapages->description])
 @section('content')
     @include('app.includes.mobile')
     @include('app.includes.navua')

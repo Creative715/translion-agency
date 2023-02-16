@@ -1,4 +1,4 @@
-@extends('layouts.app_de', ['title' => $depages->seo_title, 'description' => $depages->description])
+@extends('layouts.app_de', ['title' => $depages->title, 'description' => $depages->description])
 @section('content')
     @include('app.includes.mobile')
     @include('app.includes.navde')
