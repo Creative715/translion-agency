@@ -65,12 +65,12 @@
                                 </td>
 
                                 <td class="project-actions text-right">
-                                    <a class="btn btn-info btn-sm" href="{{ route('page.edit', $uapage['id']) }}">
+                                    <a class="btn btn-info btn-sm" href="{{ route('uapage.edit', $uapage['id']) }}">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Редагувати
                                     </a>
-                                    <form action="{{ route('page.destroy', $uapage['id']) }}" method="POST"
+                                    <form action="{{ route('uapage.destroy', $uapage['id']) }}" method="POST"
                                           style="display: inline-block">
                                         @csrf
                                         @method('DELETE')

@@ -55,22 +55,22 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach ($uapages as $uapage)
+                        @foreach ($depages as $depage)
                             <tr>
                                 <td>
-                                    {{ $uapage['id'] }}
+                                    {{ $depage['id'] }}
                                 </td>
                                 <td>
-                                    {{ $uapage['title'] }}
+                                    {{ $depage['title'] }}
                                 </td>
 
                                 <td class="project-actions text-right">
-                                    <a class="btn btn-info btn-sm" href="{{ route('page.edit', $uapage['id']) }}">
+                                    <a class="btn btn-info btn-sm" href="{{ route('depage.edit', $depage['id']) }}">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Редагувати
                                     </a>
-                                    <form action="{{ route('page.destroy', $uapage['id']) }}" method="POST"
+                                    <form action="{{ route('depage.destroy', $depage['id']) }}" method="POST"
                                           style="display: inline-block">
                                         @csrf
                                         @method('DELETE')

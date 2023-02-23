@@ -278,7 +278,7 @@
 <script src="{{ asset('dashboard/ckfinder/ckfinder.js') }}"></script>
 <script type="text/javascript">
     ClassicEditor
-        .create( document.querySelector( '#page_content' ), {
+        .create( document.querySelector( '#content' ), {
             ckfinder: {
                 uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
             },

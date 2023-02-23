@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('title', 'Додати новини')
+@section('title', 'Додавання статті')
 @section('content')
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -38,30 +38,27 @@
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form enctype="multipart/form-data" action="{{ route('news.store') }}" method="POST">
+                            <form enctype="multipart/form-data" action="{{ route('article.store') }}" method="POST">
                                 @csrf
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Заголовок новин</label>
+                                        <label for="exampleInputEmail1">Заголовок статті</label>
                                         <input type="text" name="title" class="form-control" placeholder="Введіть назву" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="content">Текст новин</label>
+                                        <label for="content">Текст статті</label>
                                         <textarea id="content" name="content" class="form-control" rows="4"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="description">Опис сторінки (SEO)</label>
+                                        <label for="description">Опис статті (SEO)</label>
                                         <input type="text" name="description" class="form-control" id="description" placeholder="Введіть опис" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="img">Зображення</label>
-                                        <input name="img" class="form-control" type="file">
+                                        <label>Адреса статті (url)</label>
+                                        <input type="text" name="slug" class="form-control"  placeholder="Додайте бажану адресу" >
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Адреса сторінки (url)</label>
-                                    <input type="text" name="slug" class="form-control"  placeholder="Додається автоматично" readonly>
-                                </div>
+
                                 <!-- /.card-body -->
                                 <div class="card-footer">
                                     <button type="submit" class="btn btn-primary">Додати</button>

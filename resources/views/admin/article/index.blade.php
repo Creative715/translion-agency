@@ -65,12 +65,12 @@
                                 </td>
 
                                 <td class="project-actions text-right">
-                                    <a class="btn btn-info btn-sm" href="{{ route('articles.edit', $article['id']) }}">
+                                    <a class="btn btn-info btn-sm" href="{{ route('article.edit', $article['id']) }}">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Редагувати
                                     </a>
-                                    <form action="{{ route('articles.destroy', $article['id']) }}" method="POST"
+                                    <form action="{{ route('article.destroy', $article['id']) }}" method="POST"
                                           style="display: inline-block">
                                         @csrf
                                         @method('DELETE')

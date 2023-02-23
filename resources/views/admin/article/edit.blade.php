@@ -1,9 +1,9 @@
 @extends('layouts.dashboard')
 @section('title', 'Редагувати сторінку')
 @section('content')
-    <!-- Content Wrapper. Contains articles content -->
+    <!-- Content Wrapper. Contains article content -->
     <div class="content-wrapper">
-        <!-- Content Header (articles header) -->
+        <!-- Content Header (article header) -->
         <div class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
@@ -34,29 +34,29 @@
                         @endif
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">@yield('title') - {{ $articles['title'] }}</h3>
+                                <h3 class="card-title">@yield('title') - {{ $article['title'] }}</h3>
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form enctype="multipart/form-data" action="{{ route('articles.update', $articles['id']) }}" method="post">
+                            <form enctype="multipart/form-data" action="{{ route('article.update', $article['id']) }}" method="post">
                                 @csrf
                                 @method('PUT')
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label>Заголовок</label>
-                                        <input type="text" name="title" value="{{ $articles['title'] }}" class="form-control" placeholder="Введіть назву" required>
+                                        <input type="text" name="title" value="{{ $article['title'] }}" class="form-control" placeholder="Введіть назву" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Текст статті</label>
-                                        <textarea id="content" name="content" class="form-control" rows="4">{{ $articles['content'] }}</textarea>
+                                        <textarea id="content" name="content" class="form-control" rows="4">{{ $article['content'] }}</textarea>
                                     </div>
                                     <div class="form-group">
                                         <label>Опис (SEO)</label>
-                                        <input type="text" name="description" value="{{ $articles['description'] }}" class="form-control" id="exampleInputName" placeholder="Введіть опис" required>
+                                        <input type="text" name="description" value="{{ $article['description'] }}" class="form-control" id="exampleInputName" placeholder="Введіть опис" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Адреса сторінки (url)</label>
-                                        <input type="text" name="slug" class="form-control"  value="{{ $articles['slug'] }}" readonly>
+                                        <input type="text" name="slug" class="form-control"  value="{{ $article['slug'] }}" readonly>
                                     </div>
 
                                 </div>

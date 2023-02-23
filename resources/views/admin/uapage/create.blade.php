@@ -50,6 +50,10 @@
                                         <textarea id="content" name="content" class="form-control" rows="4"></textarea>
                                     </div>
                                     <div class="form-group">
+                                        <label>Опис сторінки (SEO)</label>
+                                        <input type="text" name="description" class="form-control" id="description" placeholder="Введіть опис" required>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="exampleInputEmail1">Slug</label>
                                         <input type="text" name="slug" class="form-control"  placeholder="url">
                                     </div>

@@ -53,19 +53,19 @@ class UapageController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param \App\Models\Page $uapage
+     * @param \App\Models\Uapage $uapage
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function edit(Uapage $uapage)
     {
-        return view('admin.uapage.edit');
+        return view('admin.uapage.edit', compact('uapage'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Page $uapage
+     * @param \App\Models\Uapage $uapage
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Uapage $uapage)
@@ -81,7 +81,7 @@ class UapageController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Models\Page $uapage
+     * @param \App\Models\Uapage $uapage
      * @return \Illuminate\Http\Response
      */
     public function destroy(Uapage $uapage)
