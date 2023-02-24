@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\EnpageController;
 use App\Http\Controllers\Admin\DepageController;
 use App\Http\Controllers\Admin\UapageController;
+use App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,6 +31,8 @@ Route::get('statti', [App\Http\Controllers\ArticleController::class, 'index'])->
 Route::get('statti/{slug}/', [App\Http\Controllers\ArticleController::class, 'more'])->name('article.more');
 
 Auth::routes();
+
+Route::post('/upload', [UploadController::class, 'upload'])->name('upload.image');
 
 Route::group(['prefix'=>'inside/', 'middleware'=>['auth']], function(){
     Route::get('/', [DashboardController::class, 'index'])->name('mainAdmin');

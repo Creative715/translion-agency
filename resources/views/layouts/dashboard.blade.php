@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Адмін панель - @yield('title')</title>
-
+    <x-head.tinymce-config/>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="{{ asset('/dashboard/plugins/daterangepicker/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('/dashboard/plugins/summernote/summernote-bs4.min.css') }}">
-    <style>
+    {{-- <style>
         .ck.ck-editor__editable_inline > :last-child {
             min-height: 300px;
         }
@@ -35,7 +35,7 @@
         .ck.ck-editor__editable_inline > :first-child {
             min-height: 300px;
         }
-    </style>
+    </style> --}}
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -274,59 +274,6 @@
 <script src="/dashboard/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/dashboard/dist/js/adminlte.js"></script>
-<script src="{{ asset('dashboard/ckeditor5/build/ckeditor.js') }}"></script>
-<script src="{{ asset('dashboard/ckfinder/ckfinder.js') }}"></script>
-<script type="text/javascript">
-    ClassicEditor
-        .create( document.querySelector( '#content' ), {
-            ckfinder: {
-                uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
-            },
-            toolbar: {
-                items: [
-                    'heading',
-                    '|',
-                    'bold',
-                    'italic',
-                    'link',
-                    'bulletedList',
-                    'numberedList',
-                    '|',
-                    'outdent',
-                    'indent',
-                    '|',
-                    'blockQuote',
-                    'insert',
-                    'imageUpload',
-                    'insertTable',
-                    'CKFinder',
-                    'mediaEmbed',
-                    'undo',
-                    'redo',
-                    'alignment'
-                ]
-            },
-            language: 'uk',
-            image: {
-                toolbar: [
-                    'imageTextAlternative',
-                    'imageStyle:full',
-                    'imageStyle:side'
-                ]
-            },
-            table: {
-                contentToolbar: [
-                    'tableColumn',
-                    'tableRow',
-                    'mergeTableCells'
-                ]
-            },
-        } )
-        .catch( function( error ) {
-            console.error( error );
-        } );
- 
- </script>
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/dashboard/dist/js/pages/dashboard.js"></script>
